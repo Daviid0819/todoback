@@ -144,7 +144,7 @@ router.post("/user/resend", async(req, res) => {
     }
 });
 
-router.post("/api/user/login", async(req, res) => {
+router.post("/user/login", async(req, res) => {
     const user = await User.findOne({
         username: req.body.username
     });
